@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vikeon Tech</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    header {
+      background: url('https://images.unsplash.com/photo-1510552776732-09c57b4c9b1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      height: 90vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    header h1 {
+      font-size: 4rem;
+    }
+
+    .intro-section {
+      padding: 50px 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="blue darken-3 z-depth-2">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">Vikeon</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#team">Our Team</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#order">Order</a></li>
+    <li><a href="#team">Our Team</a></li>
+  </ul>
+
+  <header>
+    <h1>Welcome to Vikeon</h1>
+    <h5>Leading the Future of Mobile Technology</h5>
+    <a href="#products" class="btn-large deep-orange accent-3 z-depth-2">Explore Products</a>
+  </header>
+
+  <section class="container intro-section">
+    <div class="row center">
+      <h3 class="blue-text text-darken-2">Top Phone Brands, All in One Place</h3>
+      <p class="flow-text">At Vikeon, we are committed to delivering only the finest smartphones and unmatched customer service.</p>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(elems);
+    });
+  </script>
+</body>
+</html>
